@@ -12,6 +12,6 @@ if __name__ == '__main__':
     print(Pessoa.cumprimentar(p))
     print(id(p))
     print(p.cumprimentar())
-    p.name = "Thulio Vinicius"
+    p.name = "Thulio Lima"
     print(p.name)
     print(p.idade)
