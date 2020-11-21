@@ -13,6 +13,9 @@ if __name__ == '__main__':
     nicolas = Pessoa(name='Nicolas')
     thulio = Pessoa(nicolas, name="Thulio")
     print(thulio.filhos)
+    thulio.sobrenome = "Lima"
+    print(thulio.sobrenome)
+
     for filhos in thulio.filhos:
         print(filhos.name)
 
