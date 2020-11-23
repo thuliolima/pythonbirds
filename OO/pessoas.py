@@ -21,9 +21,13 @@ if __name__ == '__main__':
     print(thulio.sobrenome)
     print(thulio.__dict__)
 
-    del  thulio.sobrenome
+    del thulio.sobrenome
 
     print(thulio.__dict__)
+
+    print(Pessoa.olhos)
+
+    Pessoa.olhos=3
 
     print(Pessoa.olhos)
 
