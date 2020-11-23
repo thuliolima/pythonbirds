@@ -13,8 +13,15 @@ if __name__ == '__main__':
     nicolas = Pessoa(name='Nicolas')
     thulio = Pessoa(nicolas, name="Thulio")
     print(thulio.filhos)
+
+    # Criação do atributo dinamico
     thulio.sobrenome = "Lima"
     print(thulio.sobrenome)
+    print(thulio.__dict__)
+
+    del  thulio.sobrenome
+
+    print(thulio.__dict__)
 
     for filhos in thulio.filhos:
         print(filhos.name)
