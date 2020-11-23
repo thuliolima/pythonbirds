@@ -1,4 +1,6 @@
 class Pessoa:
+    #atributo de class
+    olhos = 2
     def __init__(self, *filhos, name=None, idade=29):
         self.name = name
         self.idade = idade
@@ -22,6 +24,8 @@ if __name__ == '__main__':
     del  thulio.sobrenome
 
     print(thulio.__dict__)
+
+    print(Pessoa.olhos)
 
     for filhos in thulio.filhos:
         print(filhos.name)
