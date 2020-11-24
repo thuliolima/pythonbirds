@@ -24,3 +24,25 @@ class motor:
     def freiar(self):
         self.valocidade -=2
         self.valocidade = max(0, self.valocidade)
+
+class carro:
+    def __init__(self, direcao, motor):
+        self.direcao = direcao
+        self.motor = motor
+
+    def calcular_velocidade(self):
+        return self.motor.valocidade
+
+    def velocidade(self):
+        self.motor.acelerar()
+
+    def frear(self):
+        self.motor.freiar()
+
+    def calcular_direcao(self):
+        return self.direcao.valor
+
+    def girar_a_direita(self):
+        return self.girar_a_direita()
+    def girar_a_esquerda(self):
+        return self.girar_a_esquerda()
